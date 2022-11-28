@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RM6785-common/RM6785-common-vendor.mk)
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
