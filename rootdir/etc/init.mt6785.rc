@@ -82,6 +82,9 @@ on charger
 
     start vendor.light-default
 
+on early-fs
+    start vold
+
 on fs
     write /proc/bootprof "INIT:Mount_START"
     wait_for_prop hwservicemanager.ready "true"
