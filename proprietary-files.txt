@@ -1544,9 +1544,27 @@ vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 -odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 -odm/lib64/vendor.oplus.hardware.orms@1.0.so
 
-# Power
--vendor/lib64/vendor.mediatek.hardware.power@1.1.so
--vendor/lib64/vendor.mediatek.hardware.power@2.0.so
+# Power - from RMX2156_11_F.15
+odm/etc/powerhal/power_app_cfg.xml|5e3943d149fe95b3017e7ab79d108b262dc05303
+-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service|847a9cf9e97e7c120a208e78ce0aad4954dba42e
+vendor/etc/init/bootperf.rc|060707733e600e7002878408d907ed9e7dd7d6f2
+vendor/etc/init/init.fpsgo.rc|da39a3ee5e6b4b0d3255bfef95601890afd80709
+vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc|ecd34e794f2be43025043176889506a3ed2cec2e
+vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc|1a7c82fde63ddf0815938f554550a05edb473f39
+-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so|8104beffd1d642f201e980753b5d00e088b9c8c6
+-vendor/lib/libmtkperf_client_vendor.so|a9ed1c2fc43418acff7649e0c473cc7e6181d794
+-vendor/lib/libperfctl_vendor.so|2e82e0b8a00071d694f4f7d8ba366ccf24c9a89c
+-vendor/lib/libpower_timer.so|337f8c852b7fa7f2c2c94ee26f7883c52def6a0e
+-vendor/lib/libpowerhal.so|2b8d6d425ee072efc826493f97f05c1d933eab2f
+-vendor/lib/libpowerhalwrap_vendor.so|cab2b56a8c12a7b43d2a271ace5bb5c880d1d7c0
+-vendor/lib/vendor.mediatek.hardware.power@2.0.so|455d3022046a7acba0401e87ae1b3c6527531cc1
+-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so|002b55fa7b26ab4110861a6c6d7ba2ccc809cdae
+-vendor/lib64/libmtkperf_client_vendor.so|fd4dc0543991f1d69845b6db7872067eeca687a9
+-vendor/lib64/libperfctl_vendor.so|36372b4e02de14fd9f773045b65db5def1ac84ec
+-vendor/lib64/libpower_timer.so|d2ed344bbdc62baad7504b323d0cfd6024a8520b
+-vendor/lib64/libpowerhal.so|6480050a2d61afafef3cae0f84254cd52e1a9fbe
+-vendor/lib64/libpowerhalwrap_vendor.so|c7526329268adaa433f868b2906ac9d25ba0bc6c
+-vendor/lib64/vendor.mediatek.hardware.power@2.0.so|0d0053655bd4cf327d3af7a355bfee4da764c1c4
 
 # PQ
 -vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
