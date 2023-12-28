@@ -246,26 +246,25 @@ odm/firmware/aw87359/aw87359_drcv.bin
 odm/firmware/aw87359/aw87359_dspk.bin
 odm/firmware/aw87359/aw87359_dspk_ftm.bin
 
-# Bluetooth
--vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
--vendor/bin/autobt
-vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
-vendor/etc/init/init.bt_drv.rc
--vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
--vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
--vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
--vendor/lib64/libbluetooth_audio_session_mediatek.so
--vendor/lib64/libbluetooth_hw_test.so
--vendor/lib64/libbluetooth_mtk.so
--vendor/lib64/libbluetooth_mtk_pure.so
--vendor/lib64/libbluetooth_relayer.so
--vendor/lib64/libbluetoothem_mtk.so
--vendor/lib64/libbt-vendor.so
--vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-
-# Bluetooth (aptX)
--lib64/libaptXHD_encoder.so
--lib64/libaptX_encoder.so
+# Bluetooth - from RMX2156_11_F.15
+-vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek|9c1c8529e55cfc8e6f54b9f5c25e6206cca184d8
+-vendor/bin/autobt|a79a2490c6e6f288537c226d1225a339ad8875c2
+vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc|47e3341e8b23b10addbddf763ea26939bacca97d
+vendor/etc/init/init.bt_drv.rc|7fecd8156319b3264ec7009829eb91e53624357b
+-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so|912bfbb10109a35399f10f6af2fbd7b3778293dd
+-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so|c82cb5b326aa2b6708bb93156b6d9ebb049549fa
+-vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so|5b00f22142a78fe03cc954f7efc26960ebd0c28d
+-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so|97b9bab9528140edce20ef24476cc7a7feeeb0e1
+-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so|c4d1b1d0e0ae05f7ad0ba8bf590435537e3e0f80
+-vendor/lib64/libbluetooth_audio_session_mediatek.so|e726d6403994e3f87cf98190d40b704a2c3a2704
+-vendor/lib64/libbluetooth_hw_test.so|08d9a67e69b9df84727210727f63e61c367ef3d8
+-vendor/lib64/libbluetooth_mtk.so|7b21dbe69cf031e62e94c6abd9970b642d73ea14
+-vendor/lib64/libbluetooth_mtk_pure.so|91243444c07eb2b28a5297b305551864939a5865
+-vendor/lib64/libbluetooth_relayer.so|30c0e20a1fa76a9a65b399a75c312f1a4c329d5b
+-vendor/lib64/libbluetoothem_mtk.so|a076f54d9d56b27a7f9c1ac0f5b073daed948408
+-vendor/lib64/libbt-vendor.so|a1b6e2a65157c88c2e904e83e49609433bbd031f
+-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so|813fed3b318cd37e5f78baeb6bc6697f880c9d51
+-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so|bb78b16bafc492a5ad72da0ac31b6d92f07f6ca5
 
 # Bluetooth (Firmware)
 vendor/firmware/BT_FW.cfg
